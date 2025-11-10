@@ -1,0 +1,32 @@
+export const projects = [
+  {
+    id: "1",
+    title: "Portfolio Website",
+    description: "A modern portfolio website built with Next.js, TypeScript, and Tailwind CSS.",
+    image: "/images/portfolio.jpg",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    githubUrl: "https://github.com/username/portfolio",
+    liveUrl: "https://portfolio.vercel.app",
+    featured: true,
+  },
+  {
+    id: "2",
+    title: "E-commerce Platform",
+    description: "Full-stack e-commerce solution with React, Node.js, and MongoDB.",
+    image: "/images/ecommerce.jpg",
+    tags: ["React", "Node.js", "MongoDB"],
+    githubUrl: "https://github.com/username/ecommerce",
+    liveUrl: "https://ecommerce-demo.vercel.app",
+    featured: true,
+  },
+  {
+    id: "3",
+    title: "Task Management App",
+    description: "A collaborative task management application with real-time updates.",
+    image: "/images/taskapp.jpg",
+    tags: ["Vue.js", "Firebase", "Tailwind CSS"],
+    githubUrl: "https://github.com/username/taskapp",
+    liveUrl: "https://taskapp-demo.vercel.app",
+    featured: false,
+  },
+]

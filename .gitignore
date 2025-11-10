@@ -1,0 +1,11 @@
+# Dependencies & build
+node_modules/
+.next/
+dist/
+out/
+.vercel/
+
+# Env & OS
+.env*
+.DS_Store
+Thumbs.db
