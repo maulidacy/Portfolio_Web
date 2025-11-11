@@ -1,32 +1,35 @@
 export const projects = [
   {
-    id: "1",
-    title: "Portfolio Website",
-    description: "A modern portfolio website built with Next.js, TypeScript, and Tailwind CSS.",
-    image: "/images/portfolio.jpg",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-    githubUrl: "https://github.com/username/portfolio",
-    liveUrl: "https://portfolio.vercel.app",
+    title: "LostItem - SITEMU",
+    description:
+      "Aplikasi pelaporan & pencarian barang hilang untuk lingkungan kampus.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Vercel"],
+    siteUrl: "https://sitemudinus.vercel.app/",
+    image: "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1762854945/SITEMU_gxz5sp.png",
     featured: true,
   },
   {
-    id: "2",
-    title: "E-commerce Platform",
-    description: "Full-stack e-commerce solution with React, Node.js, and MongoDB.",
-    image: "/images/ecommerce.jpg",
-    tags: ["React", "Node.js", "MongoDB"],
-    githubUrl: "https://github.com/username/ecommerce",
-    liveUrl: "https://ecommerce-demo.vercel.app",
-    featured: true,
+    title: "TravelEase",
+    description:
+      "Rekomendasi destinasi wisata berbasis AI dengan Streamlit.",
+    tags: ["Python", "Streamlit", "AI"],
+    siteUrl: "https://travelease.streamlit.app/",
+    image: "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1762854943/TravelEase_mi4f9h.png",
   },
   {
-    id: "3",
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates.",
-    image: "/images/taskapp.jpg",
-    tags: ["Vue.js", "Firebase", "Tailwind CSS"],
-    githubUrl: "https://github.com/username/taskapp",
-    liveUrl: "https://taskapp-demo.vercel.app",
-    featured: false,
+    title: "So.Learn - Productivity Web",
+    description:
+      "To-do list modern dengan upload file, catatan, dan pengingat.",
+    tags: ["HTML", "CSS", "JavaScript", "Netlify"],
+    siteUrl: "https://glowing-sfogliatella-9b0715.netlify.app/",
+    image: "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1762854945/So_Learn_m8jwup.png",
   },
-]
+  {
+    title: "Konversi Suhu",
+    description:
+      "Konversi Celcius, Fahrenheit, Kelvin minimalis & responsif.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    siteUrl: "https://konversisuhu-42a8bc.netlify.app/",
+    image: "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1762854943/Konversi_suhu_nyizby.png",
+  },
+];

@@ -8,8 +8,8 @@ const nextConfig = {
       { protocol: "https", hostname: "i.pinimg.com" },
       { protocol: "https", hostname: "lh3.googleusercontent.com" },
       { protocol: "https", hostname: "drive.google.com" },
-      // tambahkan domain lain yang kamu pakai, mis. Unsplash:
-      // { protocol: "https", hostname: "images.unsplash.com" },
+      { protocol: "https", hostname: "**" },
+      { protocol: "https", hostname: "res.cloudinary.com" },
     ],
   },
 };

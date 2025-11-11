@@ -1,21 +1,29 @@
-import Container from "@/components/layout/container";
+import ProjectCard from "@/components/sections/project-card";
 import { projects } from "@/features/projects/data";
-import { ProjectCard } from "@/components/sections/project-card";
 
-export const metadata = { title: "Projects" };
+export const metadata = {
+  title: "Projects",
+  description: "Semua project yang pernah saya kerjakan",
+};
 
 export default function ProjectsPage() {
-  if (!projects.length) {
-    return <Container className="py-12"><p className="text-muted-foreground">Belum ada proyek.</p></Container>;
-  }
+  const allProjects = [...projects].sort(
+    (a, b) => Number(b.featured) - Number(a.featured)
+  );
+
   return (
-    <Container className="py-12">
-      <h1 className="text-2xl font-semibold">Projects</h1>
-      <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {projects.map((p) => (
-          <ProjectCard key={p._id} slug={p.slug} title={p.title} summary={p.summary} cover={p.cover} tags={p.tags} />
-        ))}
+    <main className="py-16 sm:py-24">
+      <div className="container mx-auto max-w-7xl px-4">
+        <h1 className="mb-8 text-3xl font-semibold tracking-tight sm:text-4xl">
+          Semua Projects
+        </h1>
+
+        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+          {allProjects.map((p, i) => (
+            <ProjectCard key={p.title} p={{ ...p, priority: i === 0 }} />
+          ))}
+        </div>
       </div>
-    </Container>
+    </main>
   );
 }
