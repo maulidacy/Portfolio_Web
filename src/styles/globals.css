@@ -77,35 +77,29 @@ body::after {
 }
 
 /* ===== hero about ===== */
-/* Primary pill — sama dengan CTA yang lain */
+
 .cta-primary{
   background: linear-gradient(90deg,#8b5cf6,#6366f1,#22d3ee,#8b5cf6);
-  background-size: 300% 300%;
+  background-size:300% 300%;
   animation: gradientMove 6s linear infinite;
-  box-shadow: 0 8px 24px rgba(99,102,241,.25);
+  box-shadow:0 8px 24px rgba(99,102,241,.25);
 }
-.cta-primary:hover{ filter: brightness(1.06); transform: translateY(-1px); }
-.dark .cta-primary{ box-shadow: 0 8px 24px rgba(129,140,248,.25); }
+.cta-primary:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.dark .cta-primary{box-shadow:0 8px 24px rgba(129,140,248,.25)}
 
-/* Outline pill dengan ring gradient */
-.cta-outline{
-  color: rgb(226 232 240); /* slate-200 */
-  background: transparent;
-  border-radius: 9999px;
-  position: relative;
-  padding: 0.625rem 1.25rem;
-}
+.cta-outline{color:rgb(226 232 240);background:transparent;border-radius:9999px;position:relative;padding:.625rem 1.25rem}
 .cta-outline::before{
-  content:"";
-  position:absolute; inset:0;
-  padding:1px; border-radius:inherit;
-  background: conic-gradient(#8b5cf6,#6366f1,#22d3ee,#8b5cf6);
-  -webkit-mask: 
-      linear-gradient(#000 0 0) content-box,
-      linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-          mask-composite: exclude;
+  content:"";position:absolute;inset:0;padding:1px;border-radius:inherit;
+  background:conic-gradient(#8b5cf6,#6366f1,#22d3ee,#8b5cf6);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;
 }
-.cta-outline:hover{ color: white; }
-html.light .cta-outline{ color: #334155; } /* slate-700 on light */
+.cta-outline:hover{color:white}
+html.light .cta-outline{color:#334155}
 
+/* prefer-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-\[gradientMove_6s_linear_infinite\] {
+    animation: none !important;
+  }
+}
