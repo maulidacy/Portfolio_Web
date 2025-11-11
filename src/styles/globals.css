@@ -34,3 +34,50 @@ body::after {
   z-index: -1;
   filter: blur(60px);
 }
+
+/* ===== Animated conic gradient border ===== */
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes spin-conic {
+  to { --angle: 360deg; }
+}
+
+/* Respect user reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-conic-border { animation: none !important; }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shineGold {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
