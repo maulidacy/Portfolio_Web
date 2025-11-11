@@ -2,7 +2,7 @@
 
 import { ArrowUp } from "lucide-react";
 import Link from "next/link";
-import { SocialLinks } from "@/components/shared/social-links";
+import SocialLinks from "@/components/shared/social-links";
 
 export default function Footer() {
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
